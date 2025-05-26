@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #fbfbfb, hwb(340 96% 3%)); 
+  color: #4a3c4e;
+  margin: 0;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Kotak umum */
+.box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  max-width: 760px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect manis */
+.box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.header-box h1 {
+  color: #c2185b;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+/* Deskripsi */
+.desc-box p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #6b4b5f;
+  margin: 0;
+  text-align: center;
+}
+
+/* Resep */
+.resep-box h2 {
+  color: #ad1457;
+  font-size: 20px;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #f3f1f1;
+  padding-bottom: 4px;
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .box {
+    padding: 20px;
+  }
+
+  .header-box h1 {
+    font-size: 24px;
+  }
+
+  .desc-box p {
+    font-size: 15px;
+  }
+}
